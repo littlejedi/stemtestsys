@@ -1,0 +1,8 @@
+.label {border-radius:10px; font:14px/14px arial, "宋体"; padding:3px 10px; margin:0 5px;}
+.label.label-default  {background-color:#e7e7e7; color:#333;}
+.label.label-danger,
+.label.active  {background-color:#c00; color:#fff;}
+
+.label-hot {display:block; margin:3px 0; padding-left:10px; border:1px solid #ddd; text-align:left; position:relative; line-height:30px; background:#f9f9f9; color:#999;}
+.label-hot .amount  {padding:0 10px; border-left:1px solid #ddd; float:right;}
+.label-hot:hover {background:#fff; color:#333;}

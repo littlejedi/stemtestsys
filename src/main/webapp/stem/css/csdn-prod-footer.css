@@ -1,0 +1,23 @@
+/*pub_footer*/
+.csdn-prod-footer{clear:both; width:auto; overflow:hidden; margin:10px auto; /*padding:3px 6px;*/ padding:0; border-top:1px solid #ccc; color:#333; font:normal 12px/24px Helvetica, Tahoma, Arial, sans-serif; text-align:center;}
+.csdn-prod-footer dl{padding:3px 0 3px; overflow:hidden; margin:0; /*font-family:simsun;*/}
+.csdn-prod-footer dd{line-height: 24px;}
+.csdn-prod-footer dd a{padding:0 9px; margin:0;}
+.csdn-prod-footer dd a:link, .csdn-prod-footer dd a:visited, .csdn-prod-footer dd a:active{color:#333; text-decoration:none;}
+.csdn-prod-footer dd a:hover{/*color:#015FB6;*/ color:#f00;}
+.csdn-prod-footer dd img{border:0; vertical-align:middle;}
+.csdn-prod-footer dt {padding-top:5px; margin:0; text-align:center;}
+.csdn-prod-footer dt a{display:inline; margin:5px; padding:0;}
+.csdn-prod-footer dt a img{/*width:115px; height:45px;*/ width:19px; height:24px; border:1px solid #ccc; vertical-align:middle;}
+
+/* 增加客服联系方式 */
+.csdn-prod-footer .qq { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -111px; display: inline-block; padding-left: 17px; }
+.csdn-prod-footer .qq:hover { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -138px; display: inline-block; padding-left: 17px; }
+.csdn-prod-footer .weibo { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -14px -52px; display: inline-block; padding-left: 22px; width: auto; height: auto; }
+.csdn-prod-footer .weibo:hover { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -13px -81px; display: inline-block; padding-left: 22px; }
+.csdn-prod-footer .online { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -165px; display: inline-block; padding-left: 20px; }
+.csdn-prod-footer .online:hover { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -193px; display: inline-block; padding-left: 20px; }
+.csdn-prod-footer .email { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -220px; display: inline-block; padding-left: 20px; }
+.csdn-prod-footer .email:hover { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -248px; display: inline-block; padding-left: 20px; }
+.csdn-prod-footer .phone { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px 1px; display: inline-block; padding-left: 20px; }
+.csdn-prod-footer .phone:hover { background: url( //csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -27px; display: inline-block; padding-left: 20px; }

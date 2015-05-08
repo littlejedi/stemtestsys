@@ -1,0 +1,893 @@
+/* CSS Document */
+/* CSS Document */
+@charset "utf-8";
+@import "xixi.css";
+/* @import "content.css";
+@import "popup.css";
+@import "input.css";
+@import "hero1_1.css";
+
+@import "zhangpeng.css"; */
+body {
+    color: #666666;
+    font-family: "宋体",Arial,"微软雅黑";
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+	background:none;
+	line-height:23px;
+}
+div, h2,h3,h4,h5, ul, li, img, p, dl, dt, dd {
+    border: 0 none;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+h2, h3, h4, h5 {
+    font-family: "微软雅黑",Arial,"黑体";
+	font-weight:bold;
+	font-size:16px;
+}
+a{outline:none;}
+a:link, a:visited {
+    color: #666666;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+.fa {
+    font-family: Arial,Helvetica,sans-serif;
+}
+.fs {
+    font-family: "宋体";
+}
+.fw {
+    font-family: "微软雅黑";
+}
+.f14 {
+    font-size: 14px;
+}
+.fb {
+    font-weight: bold;
+}
+.blue1 {
+    color: #259BC5;
+}
+.blue1 a:link, .blue1 a:visited {
+    color: #259BC5;
+    text-decoration: none;
+}
+.blue1 a:hover {
+    color: #259BC5;
+    text-decoration: none;
+}
+.yel1 {
+    color: #DC6F26;
+}
+.yel1 a:link, .yel1 a:visited {
+    color: #DC6F26;
+    text-decoration: none;
+}
+.yel1 a:hover {
+    color: #DC6F26;
+    text-decoration: none;
+}
+
+.yel2 {
+    color: #dc4e01;
+}
+.yel2 a:link, .yel2 a:visited {
+    color: #dc4e01;
+    text-decoration: none;
+}
+.yel2 a:hover {
+    color: #dc4e01;
+    text-decoration: none;
+}
+
+.red1 {
+    color: #FC0101;
+}
+.red1 a:link, .red1 a:visited {
+    color: #FC0101;
+    text-decoration: none;
+}
+.red1 a:hover {
+    color: #FC0101;
+    text-decoration: none;
+}
+.green1 {
+    color: #5D9A00;
+}
+.green1 a:link, .green1 a:visited {
+    color: #5D9A00;
+    text-decoration: none;
+}
+.green1 a:hover {
+    color: #5D9A00;
+    text-decoration: underline;
+}
+
+
+.green2 {
+    color: #375a01;
+}
+.green2 a:link, .green2 a:visited {
+    color: #375a01;
+    text-decoration: none;
+}
+.green2 a:hover {
+    color: #375a01;
+    text-decoration: underline;
+}
+
+.gary1{ color:#999;}
+.gary1 a:link, .gary1 a:visited {
+    color: #999;
+    text-decoration: none;
+}
+.gary1 a:hover {
+    color: #999;
+    text-decoration: underline;
+}
+
+.green4{color:#5c9c00;font-family:"arial";}
+
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.cl {
+    clear: both;
+}
+.blank20 {
+    clear: both;
+    height: 20px;
+}
+.blank10 {
+    clear: both;
+    font-size: 0;
+    height: 10px;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+
+.blank50 {
+    clear: both;
+    height: 50px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+}
+.warp {
+    clear: both;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.warp1 {
+    clear: both;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.warp {
+    clear: both;
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+.warp1 {
+    clear: both;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.topbg{
+    clear: both;
+    background:#48525e;
+	height:40px;
+	border-bottom:1px #d5d5d5 solid;
+    width: 100%;
+	color:#fff;
+	overflow:visible;
+	}
+
+.pagelogin .topbg {
+   background:#48525e;
+}
+
+.MLogo {
+    background: url("../images/m_new_logo.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    float: left;
+    height:40px;
+    width: 105px;
+	line-height:0;
+	font-size:0;
+	color:#f0f0f0;
+	position:relative;
+}
+
+.MLogo {
+    background: url("../images/m_new_logo.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    float: left;
+    height:40px;
+    width: 105px;
+	line-height:0;
+	font-size:0;
+	color:#f0f0f0;
+	position:relative;
+}
+
+
+.MLogo a,.MLogo a:link,.MLogo a:visited,.MLogo a:hover{
+    border: 0 none;
+    display: block;
+    height: 40px;
+    text-decoration: none;
+    width: 105px;
+	color:#f0f0f0;
+}
+.nav {
+    background:#ffffff;
+    clear:both;
+    height:50px;
+	border-bottom:2px #e1e1e1 solid;
+}
+.csdn-toolbar .logo .icon{background:url(../images/m_new_logo.png) no-repeat 0 0;}
+.csdn-toolbar .logo .img{background:url(../images/m_new_logo.png) no-repeat -45px 0;}
+
+/************************ new top begin *************************/
+.top_user{
+	height:18px;
+	line-height:18px;	
+	color:#fff;
+	position:relative;
+	z-index:3;
+	top:10px;
+	left:0;
+	float:right;
+	}
+.top_user a:link,.top_user a:visited,.top_user a:hover{
+	color:#fff;
+	text-decoration:none;
+	}
+.top_user .before_login .pLogin a:link,.top_user .before_login .pLogin a:visited,.top_user .before_login .pLogin a:hover{
+	color:#666;
+	text-decoration:none;
+	}
+.top_user .qyyh{
+	display:block;
+	float:right;
+	width:59px;
+	height:18px;
+	padding:0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px; 
+	background:#999999;
+	color:#fff;
+	text-align:center;
+	cursor:pointer;
+	}
+
+.top_user .qyyh:link, .top_user .qyyh:visited{
+	color:#fff;
+	text-decoration:none;
+	}
+
+.top_user .qyyh:hover{
+	background:#807f7f;
+	color:#fff;
+	}
+
+
+.before_login{
+	float:right;
+	width:42px;
+	height:18px;
+	padding:0;
+	padding-left:14px;
+	background:url(../images/ico.gif) no-repeat -690px -45px;
+	position:relative;
+	z-index:1;
+	margin-top:0px;
+	}
+.after_login{
+	float:right;
+	text-align:right;
+	padding-right:15px;
+	}
+.after_login span{float:right; padding:0 3px;}
+.top_user .after_login a:link,.top_user .after_login a:visited,.top_user .after_login a:hover{
+	text-decoration:underline;
+	}
+.top_user .after_login .p_out a:link,.top_user .after_login .p_out a:visited,.top_user .after_login .p_out a:hover{
+	text-decoration:none;
+	color:#666;
+	}
+
+
+.t_loginbtn{
+	float:right;
+	position:relative;
+	z-index:2;
+	background:url(../images/t_line.gif) no-repeat right 2px;
+	padding:1px 10px;
+	}
+.before_login .line{
+	background:url(../images/t_line.gif) no-repeat right 0;
+	padding:0 10px;
+	display:block;
+	float:left;
+	}
+.before_login .show{
+	background:url(../images/g_show.gif) no-repeat right 4px;
+	padding-right:12px;
+	}
+
+
+
+.topbg .tl{ 
+	float:left;
+	margin:22px 0 0 10px;
+	padding-left:10px;
+	border-left:1px #cccccc solid;
+	}
+.topbg .tl .tit{
+	float:left;
+	font:normal normal 24px/25px "微软雅黑";
+	}
+
+.topbg .tl a:link,.topbg .tl a:visited,.topbg .tl a:hover{ color:#666666;}
+.topbg .city{
+	float:left;
+	display:block;
+	height:20px;
+	background:url(../images/t_citybg.gif);
+	padding-left:4px;
+	margin-top:5px;
+	margin-left:10px;
+	} 
+
+.topbg .city a{
+	float:left;
+	display:block;
+	height:20px;
+	background:url(../images/t_citybg.gif) no-repeat right 0;
+	padding-right:16px;
+	font:normal normal 12px/20px "宋体";
+	} 
+	
+/******* top popup login begin *******/
+
+
+.pLogin{
+	width:180px;
+	border:1px #d6d6d6 solid;
+	background:#f6f6f6;
+	padding:15px 15px 25px;
+	position:absolute;
+	z-index:99999999999;
+	font: normal normal 12px/23px "宋体";
+	top:25px;
+	left:-75px;
+	color:#666;
+	}
+
+.pLogin .jiantou{
+	width:14px;
+	height:9px;
+	background:url(../images/hero_head_arr.png) no-repeat 0 0px;
+	position:absolute;
+	left:92px;
+	top:-9px;
+	}
+
+.pLoginTxt{
+	width:124px;
+	height:16px;
+	padding:4px 3px 4px 3px;
+	line-height:16px;
+	background:#fff;
+	color:#666;
+	border:1px #d8d8d8 solid;
+	}
+
+.pLoginTxt2{
+	width:50px;
+	height:17px;
+	padding:4px 8px 4px 2px;
+	background:url(../images/btn.png) no-repeat -340px -90px;
+	color:#666;
+	margin-bottom:6px;
+	margin-right:5px;
+	border:0;
+	}
+
+
+.pLoginBtn{
+	width:66px;
+	height:29px;
+	padding:5px 0;
+	text-align:center;
+	background:url(../images/btn.png) no-repeat -270px -170px;
+	font:normal normal 12px/19px "宋体","arial","微软雅黑";
+	color:#666;
+	border:0;
+	cursor:pointer;
+	}
+
+.pLogin .l{
+	width:35px;
+	padding-right:5px;
+	text-align:right;
+	float:left;
+	padding-top:6px;
+	}
+
+.pLogin .r{
+	width:130px;
+	float:left;
+	padding-top:6px;
+	}
+
+
+.before_login .pLogin li.pl40{
+	padding-left:39px;
+	height:auto;
+	line-height:normal;
+	}
+	
+.before_login .pLogin .jizhu{height:18px; padding:7px 0;padding-left:38px; clear:both; overflow:hidden;}
+.before_login .pLogin .jizhu .fr{display:block; width:55px;}
+.pLogin_b{ clear:both; overflow:hidden; padding-top:10px; line-height:20px;}
+.pLogin_b span.fr{_width:55px; _display:block;}
+
+
+.herotit{
+	width:960px;
+	height:0;
+	margin:0 auto;
+	position:relative;
+	z-index:1;
+	line-height:0;
+	font-size:0;
+	}
+.herotit h1{
+	position:absolute;
+	top:8px;
+	*top:22px;
+	left:210px;
+	z-index:10;
+	height:26px;
+	border-left:1px #ccc solid;
+	padding:0 42px 0 10px;
+	font:normal normal 24px/26px "微软雅黑";
+	color:#aaaaaa;
+	background:url(http://image.pongo.com.cn/my/images/beta.png) no-repeat right 0;
+	
+	}
+/******* top popup login end *******/
+
+
+
+
+
+/**************************************************************** menu begin ********************************************************************/
+.menu{
+	width:1000px;
+	margin:0 auto;
+	overflow:visible;
+	font:normal normal 16px/50px "微软雅黑","arial","黑体";
+	}
+.menu li{	
+	float:left;
+	padding:0 20px;
+	}
+.menu li a{
+	display:block;
+	padding:0 5px;
+	height:50px;
+	text-align:center;
+	font:normal normal 16px/50px "微软雅黑","arial","黑体";
+	}
+.menu a:link,.menu a:hover,.menu a:visited{color:#727272;}
+.menu a:hover,.menu a.on:link,.menu a.on:hover,.menu a.on:visited{border-bottom:2px #7ab521 solid; color:#727272;}
+
+.menu .rover{
+	background:url(../images/nav.png) no-repeat 0 -30px;
+	color:#727272;
+	padding:0 5px;
+	height:50px;
+	line-height:50px;
+	cursor:pointer;
+	}
+.menu .out{
+	background:none;
+	color:#727272;
+	height:50px;
+	line-height:50px;
+	padding:0 5px;
+	cursor:pointer;
+	}
+.menu li.on .rover,.menu li.on .out{border-bottom:2px #7ab521 solid; color:#727272;}
+.nav_con{
+	width:102px;
+	clear:both;
+	overflow:hidden;
+	position:absolute;
+	top:25px;
+	left:0;
+	z-index:999999999;
+	font-size:12px;
+	}
+
+.nav_con .t{
+	background:url(../images/Company3_4.png) no-repeat;
+	width:102px;
+	height:14px;
+	line-height:0px;
+	font-size:0;
+	}
+.nav_con .b{
+	background:url(../images/Company3_5.png) no-repeat;
+	width:102px;
+	height:13px;
+	line-height:0px;
+	font-size:0;
+	}
+.nav_con .m{
+	background:url(../images/Company3_6.png) repeat-y;
+	width:102px;
+	clear:both;
+	overflow:hidden;	
+	}
+
+
+.menu .nav_con a,.menu .nav_con a:link,.menu .nav_con a:visited{
+	display:block;
+	width:82px;
+	padding:0 5px;
+	height:27px;
+	margin-left:3px;
+	*margin-left:-3px;
+	clear:both;
+	color:#fff;
+	}
+.menu .nav_con a:hover{
+	background:#e1e634;
+	}
+	
+.nav .menu li.sea{
+	width:402px;
+	float:right;
+	padding-top:3px;
+	margin:0;
+	}
+.nav .menu li.sea input{ float:left;}	
+.nav .menu li.sea .s_btn{
+	width:18px;
+	height:21px;
+	background:url(../images/nav_s_l.gif) no-repeat;
+	border:0;
+	cursor:pointer;
+	}
+.nav .menu li.sea .txt{
+	width:353px;
+	height:21px;
+	line-height:21px;
+	background:url(../images/nav_s_m.gif) repeat-x;	
+	border:0;
+	color:#666;
+	}
+.nav .menu li.sea .del{
+	width:21px;
+	height:21px;
+	background:url(../images/nav_s_r.gif) no-repeat;
+	border:0;
+	cursor:pointer;
+	}		
+/**************************************************************** menu end ********************************************************************/
+
+
+
+.footer {
+    background: url("../images/my_bot_bg.gif") repeat-x;
+    color: #999999;
+    height: 26px;
+    line-height: 23px;
+    margin-top: 45px;
+    padding: 15px 0;
+	clear:both;
+	overflow:hidden;
+	text-align: center;
+}
+.footer a:link, .footer a:visited {
+    color: #999999;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+/**************************************************************** footer end ********************************************************************/
+
+.w_addski {
+    background:#f8f8f8;
+    clear: both;
+    padding: 10px 40px;
+	height:235px;
+	}
+.lkh29 {
+    height: 29px;
+    line-height: 29px;
+	}
+.w_addskili {
+    clear: both;
+    height: 29px;
+    line-height: 29px;
+    margin: 7px 0;
+	}
+.w_addskili li{
+	float:left;
+	width:40px;
+	color:#333;
+	text-align:right;
+    padding-right: 10px;
+	}
+.lkinp233 {width: 200px;}
+.lktxt {
+    background:#fff;
+    border: 1px solid #d8d8d8;
+    color: #666;
+    height: 17px;
+    padding: 5px 3px;
+	}
+.w_information{ margin-left:50px;}
+.w_information span a{ color:#fff;}
+.w_information .gbtn20, .gbtn21{ margin-right: 10px; }	
+.gbtn20 {
+    background:#2981A9;
+    border:0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: 16px/28px "微软雅黑","arial","黑体";
+    height: 28px;
+    padding-left: 25px;
+	padding-right: 25px;
+	}	
+.gbtn21 {
+    background:#999;
+    border:0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: 16px/28px "微软雅黑","arial","黑体";
+    height: 28px;
+    padding-left: 25px;
+	padding-right: 25px;
+	}	
+.gbtn39 {
+    background:#2981A9;
+    border:0;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: 20px/45px "微软雅黑","arial","黑体";
+    height: 45px;
+    padding-left: 25px;
+	padding-right: 25px;
+	margin-left:360px;
+	margin-top:30px;
+	}
+.w_gambit{ clear:both; overflow:hidden; padding:0 0 40px;}
+.w_gambit a{ color:#fff; line-height:45px;}
+
+
+
+
+/************************ cloud test begin *************************/
+.ex_logbg{
+	clear:both;
+	overflow:hidden;
+	background:url(../images/ex_logoallbg.gif);
+	}
+.ex_logbg .warp{
+	min-height:500px;
+	background:url(../images/ex_logbg.gif) no-repeat 320px 30px;
+	}
+.ex_logbg .footer .warp{background:none;}
+
+.topR {
+    float: right;
+    height: 18px;
+    margin-top: 12px;
+    width: 115px;
+}
+.topR li {
+    float: left;
+    line-height: 18px;
+}
+.topR li.l {
+    padding-left: 14px;
+    width: 42px;
+	background: url("../images/ico.gif") no-repeat scroll -690px -45px transparent;
+}
+.topR li.r {    
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 18px;
+    text-align: center;
+    width: 59px;
+	background: none repeat scroll 0 0 #999999;
+    border-radius: 3px 3px 3px 3px;
+}
+.topR li.r:hover {
+    background: none repeat scroll 0 0 #807F7F;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+.hire_bodybg{
+	min-height:450px;
+	}
+.left{
+ 	width:384px;
+	height:270px;
+	float:left;
+	background:#fff;
+	margin-top:64px;
+	padding-top:40px;
+	}
+.left_top {
+	margin-left: 82px;
+	float: left;
+}
+.left .t{
+	overflow:hidden;
+	float: left;
+	}
+
+.loginli{
+	clear:both;
+	overflow:hidden;
+	font-size:14px;
+	margin:0;
+	padding:0;
+	height:35px;
+	line-height:35px;
+	padding-bottom:7px;
+	zoom:1;
+	}
+.loginli li{ float:left;}
+.loginli .l{
+	width:104px;
+	text-align:right;
+}
+.loginli .r{padding-right:5px;width:165px; overflow:hidden;
+}
+.loginli .r2{width:230px;overflow:hidden;
+}
+
+.loginli li.cl0{
+	float:none; 
+	clear:both; 
+	padding-top:4px;
+	height:55px;
+	line-height:40px;
+	padding-left:80px;
+	padding-bottom:0;
+	}
+.thi_l{
+	font-size:12px;
+	color:#888;
+	padding-left:45px;
+	margin-top:20px;
+	*margin-top:0px;
+	padding-top:15px;
+	line-height:28px;
+	clear:both;
+	}
+.loginli .hire frame {
+	float: left;
+	margin-top: 32px;
+}
+
+.thi_l img{float:left;margin-right:5px;_margin-top:0px;}
+#VerifyCode{width:152px;}
+
+.loginTxt{
+	width:218px;
+	height:18px;
+	line-height:18px;
+	padding:5px 5px;
+	border:1px #cccccc solid;
+	font-size:14px;
+	font-family:"宋体","arial";
+	color:#777;
+	}
+
+.loginbtn{
+	width:111px;
+	height:42px;
+	border:0;
+	cursor:pointer;
+	background:url(../images/h_inbtn.jpg) no-repeat;
+	}
+.loginbtn:hover{
+	width:111px;
+	height:42px;
+	border:0;
+	cursor:pointer;
+	background:url(../images/h_inbtn.jpg) no-repeat 0 -48px;
+	}	
+.hi_btn_blu42{
+	display:block;
+	float:left;
+	height:42px;
+	cursor:pointer;
+	background:#2981a9;
+	font:normal normal 18px/42px "微软雅黑";
+	color:#fff;
+	text-decoration:none;
+	padding:0 15px;
+	}
+.hi_btn_blu42,.hi_btn_blu42:link,.hi_btn_blu42:visited,.hi_btn_blu42:hover{text-decoration:none;color:#fff;}
+.hi_btn_blu42:hover{
+	background:#219bc9;
+	}
+
+.hibtnlog{padding:0 32px;margin-left:105px; _margin-left:52px; margin-top:10px;}
+.hiw153{width:153px;}
+
+.forgot{
+	margin-left:40px;
+	margin-top:35px;
+	}
+.fl{float:left;}
+/************************ cloud test end *************************/
+
+
+/************************  top begin *************************/
+
+
+
+/************************  end *************************/
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+/* CSS Document */
+@charset "utf-8";
+
+.csdn-new-li ul{
+	margin-top:12px;
+	}
+.csdn-new-li li{
+	clear:both;
+	background:url(img/dot3x3.gif) no-repeat 0 9px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	}
+
+.panel{
+	border:0;
+	background-color:none;
+	box-shadow:0 0 0 0;
+	border-radius:0
+	}
+
+.panel-heading{
+	padding:0;
+	border-bottom:2px #cccccc solid;
+	position:relative;
+	clear:both;
+	overflow:visible;
+	height:36px;
+	background:none;
+	}
+.panel-default .panel-heading {background:none;border-color:#cccccc;}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  height:36px;
+  border-bottom:2px #cc0000 solid;
+  float:left;
+}
+.panel-body{padding-left:0;}
+.panel-body li{
+	clear:both;
+	background:url(../img/dot3x3.gif) no-repeat 0 9px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	padding-left:10px;
+	}

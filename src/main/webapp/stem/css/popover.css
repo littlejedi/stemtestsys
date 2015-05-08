@@ -1,0 +1,188 @@
+.icon,
+.icon-info-sm,
+.icon-success-sm,
+.icon-stop-sm,
+.icon-warning-sm,
+.icon-danger-sm,
+.strength .status,
+.info .status,
+.danger .status,
+.warning .status {
+  background-image: url("../img/bg_icons.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.icon-sm,
+.icon-info-sm,
+.icon-success-sm,
+.icon-stop-sm,
+.icon-warning-sm,
+.icon-danger-sm,
+.strength .status,
+.info .status,
+.danger .status,
+.warning .status {
+  width: 16px;
+  height: 16px;
+}
+.icons-sm {
+  margin-bottom: 10px;
+}
+.icons-sm span {
+  margin-right: 5px;
+}
+.example-popover {
+  position: relative;
+  height: 100px;
+}
+.icon-info-sm,
+.info .status {
+  background-position: -55px -64px;
+}
+.icon-success-sm,
+.strength .status {
+  background-position: -74px -64px;
+}
+.icon-stop-sm {
+  background-position: -18px -64px;
+}
+.icon-warning-sm,
+.warning .status {
+  background-position: -37px -64px;
+}
+.icon-danger-sm,
+.danger .status {
+  background-position: 0 -64px;
+}
+.strength {
+  left: 0px;
+}
+.info {
+  left: 250px;
+}
+.danger {
+  left: 500px;
+}
+.warning {
+  left: 750px;
+}
+.popover.top .arrow {
+  border-top-color: #ddd;
+}
+.popover.top .arrow:after {
+  bottom: 3px;
+}
+.popover.right .arrow {
+  border-right-color: #ddd;
+}
+.popover.right .arrow:after {
+  left: 3px;
+}
+.popover.bottom .arrow {
+  border-bottom-color: #ddd;
+}
+.popover.bottom .arrow:after {
+  top: 3px;
+}
+.popover.left .arrow {
+  border-left-color: #ddd;
+}
+.popover.left .arrow:after {
+  right: 3px;
+}
+.strength,
+.info,
+.danger,
+.warning {
+  display: block;
+  top: 0;
+  padding: 9px;
+  color: #8c8c8c;
+  border-radius: 0;
+  border: 2px solid #ddd;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.strength .popover-title,
+.info .popover-title,
+.danger .popover-title,
+.warning .popover-title {
+  display: none;
+}
+.strength .popover-content,
+.info .popover-content,
+.danger .popover-content,
+.warning .popover-content {
+  display: inline-block;
+  width: 160px;
+  padding: 0;
+  vertical-align: middle;
+}
+.strength .popover-content p,
+.info .popover-content p,
+.danger .popover-content p,
+.warning .popover-content p {
+  margin: 0;
+  padding: 0;
+}
+.danger .levels,
+.warning .levels,
+.info .levels {
+  display: none;
+}
+.danger .status,
+.warning .status,
+.info .status {
+  vertical-align: middle;
+}
+.strength em {
+  font-style: normal;
+  margin-right: 10px;
+}
+.strength .levels {
+  margin-bottom: 10px;
+}
+.strength .levels span {
+  background: #ccc;
+  display: inline-block;
+  width: 46px;
+  height: 6px;
+  margin-right: 4px;
+}
+.strength .levels .red {
+  background: #dc3c00;
+}
+.strength .status {
+  vertical-align: top;
+}
+.strength .popover-content {
+  vertical-align: top;
+}
+.info .status {
+  vertical-align: top;
+}
+.info .popover-content {
+  vertical-align: top;
+}
+.warning .popover-content {
+  font-size: 14px;
+}
+.warning .prompt {
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+}
+.warning .prompt span {
+  display: inline-block;
+  width: 66px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 10px;
+  text-align: center;
+}
+.warning .prompt .ok {
+  background: #dc3c00;
+}
+.warning .prompt .cancel {
+  background: #999;
+}

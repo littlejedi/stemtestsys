@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>
+            org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!--&lt;!&ndash; 判断用户session 是否过期，如果过期，让用户重新登录&ndash;&gt;-->  
+   <filter>
+       <filter-name>TcAdminFliter</filter-name>  
+       <filter-class>com.testsys.fliter.TcAdminFliter</filter-class>  
+   </filter>  
+   <filter-mapping>  
+       <filter-name>TcAdminFliter</filter-name>  
+       <url-pattern>/tcadmin/*</url-pattern> 
+   </filter-mapping>
+   
+   <filter>
+       <filter-name>EcAdminFliter</filter-name>  
+       <filter-class>com.testsys.fliter.EcAdminFliter</filter-class>  
+   </filter>  
+   <filter-mapping>  
+       <filter-name>EcAdminFliter</filter-name>  
+       <url-pattern>/ecadmin/*</url-pattern> 
+   </filter-mapping>
+   
+   <filter>
+       <filter-name>SuperAdminFliter</filter-name>  
+       <filter-class>com.testsys.fliter.SuperAdminFliter</filter-class>  
+   </filter>  
+   <filter-mapping>  
+       <filter-name>SuperAdminFliter</filter-name>  
+       <url-pattern>/superadmin/*</url-pattern> 
+   </filter-mapping>
+  
+  
+  <filter>
+       <filter-name>StemFliter</filter-name>  
+       <filter-class>com.testsys.fliter.StemFliter</filter-class>  
+   </filter>  
+   <filter-mapping>  
+       <filter-name>StemFliter</filter-name>  
+       <url-pattern>/stem/*</url-pattern> 
+   </filter-mapping>
+  
+  <servlet>
+        <servlet-name>testsys</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>testsys</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+	    <servlet-name>UploadServlet</servlet-name>
+	    <servlet-class>com.testsys.admin.controller.UploadServlet</servlet-class>
+	    <init-param>
+	      <param-name>filePath</param-name>
+	      <param-value>store</param-value>
+	    </init-param>
+	    <init-param>
+	      <param-name>tempFilePath</param-name>
+	      <param-value>temp</param-value>
+	    </init-param>
+	    <init-param>
+	      <param-name>imagePath</param-name>
+	      <param-value>image</param-value>
+	    </init-param>
+	    <init-param>
+	      <param-name>excelPath</param-name>
+	      <param-value>excel</param-value>
+	    </init-param>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>UploadServlet</servlet-name>
+	    <url-pattern>/ecadmin/upload</url-pattern>
+	  </servlet-mapping>
+    <!-- <servlet>
+        <servlet-name>fileupload</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>viewspace</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping> -->
+   	<!-- <filter>
+	    <filter-name>encodingFilter</filter-name>
+	    <filter-class>
+	        org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+	    <init-param>
+	        <param-name>encoding</param-name>
+	        <param-value>UTF-8</param-value>
+	    </init-param>
+	    <init-param>
+	        <param-name>forceEncoding</param-name>
+	        <param-value>true</param-value>
+	    </init-param>
+	</filter>
+	
+	<filter-mapping>
+	    <filter-name>encodingFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	</filter-mapping> -->
+</web-app>

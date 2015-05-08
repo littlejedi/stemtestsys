@@ -1,0 +1,41 @@
+
+/* line 1 : /home/caoyu/repos/csdn_rabbit/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /home/caoyu/repos/csdn_rabbit/src/static/css/nav.styl */
+.csdn-nav {
+  background-color: #fff;
+  border-bottom: 3px solid #e1e1e1;
+  margin-bottom: 35px;
+}
+
+/* line 6 : /home/caoyu/repos/csdn_rabbit/src/static/css/nav.styl */
+.csdn-nav .container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 10 : /home/caoyu/repos/csdn_rabbit/src/static/css/nav.styl */
+.csdn-nav .navbar-nav > li {
+  margin-right: 28px;
+}
+
+/* line 12 : /home/caoyu/repos/csdn_rabbit/src/static/css/nav.styl */
+.csdn-nav .navbar-nav > li > a {
+  font-size: 16px;
+  color: #727272;
+  padding: 18px 6px;
+}
+
+/* line 17 : /home/caoyu/repos/csdn_rabbit/src/static/css/nav.styl */
+.csdn-nav .navbar-nav > li.active,
+.csdn-nav .navbar-nav > li > a:hover {
+  background-color: transparent;
+  margin-bottom: -3px;
+  border-bottom: 3px solid #dc3c00;
+}
+
+/* line 22 : /home/caoyu/repos/csdn_rabbit/src/static/css/nav.styl */
+.csdn-nav .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}

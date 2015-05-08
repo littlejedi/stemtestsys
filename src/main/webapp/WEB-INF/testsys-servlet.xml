@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+       
+    <!-- 	 <security:ldap-server /> -->
+	
+	<!-- 扫描类包，将标注Spring注解的类自动转化Bean，同时完成Bean的注入 -->
+<!--     <context:component-scan base-package="com.testsys.admin.dao"/>
+    <context:component-scan base-package="com.testsys.admin.bean"/>
+    <context:component-scan base-package="com.testsys.admin.service"/> 
+    
+    <context:component-scan base-package="com.testsys.web.dao"/>
+    <context:component-scan base-package="com.testsys.web.bean"/>
+    <context:component-scan base-package="com.testsys.web.service"/>  -->
+
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        	<property name="dataSource" ref="dataSource"/>
+    </bean>
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/testsys?useUnicode=true&amp;characterEncoding=UTF-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="Jedi4ftw9"/>
+    </bean>	
+
+	<!-- 配置Jdbc模板  -->
+	<!-- <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
+		p:dataSource-ref="dataSource" /> -->
+		
+		
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+		p:dataSource-ref="dataSource" />
+    <!-- 扫描web包，应用Spring的注解 -->
+    <context:component-scan base-package="com.testsys"/>
+
+    <bean id="defaultAnnotationHandlerMapping"
+          class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+    <bean id="annotationMethodHandlerAdapter"
+          class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+
+    <!-- 配置视图解析器，将ModelAndView及字符串解析为具体的页面 -->
+    <bean
+            class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+            p:viewClass="org.springframework.web.servlet.view.JstlView"
+            p:prefix="/WEB-INF/jsp/"
+            p:suffix=".jsp"/>
+    
+
+    <bean id="multipartResolver"  
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+        <!-- 设置上传文件的最大尺寸为20MB -->  
+        <property name="maxUploadSize">  
+            <value>20971520</value>  
+        </property>  
+    </bean>  
+    
+	
+</beans>
